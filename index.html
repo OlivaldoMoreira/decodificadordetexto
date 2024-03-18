@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <img class="fundoceu" src="imagens/ceu.gif" alt="fundoceu">
+
+    <header>
+        <img class="foguetelogo" src="imagens/foguete.gif" alt="foguete">
+        <h2>Decodificador de textos</h2>
+    </header>
+    <main>
+        <section class="quadro">
+            <div class="quadro__Esquerda">
+                <textarea class="input" id="input-text" placeholder="Digite seu texto..."></textarea>
+                <p class="quadro__Esquerda__Informacoes">Apenas letras minusculas e sem acento!</p>
+                <div class="quadro__Esquerda__Botoes">
+                    <button id="cript">Criptografar</button>
+                    <button id="decript">Descriptografar</button> 
+                </div>
+            </div> 
+            <div class="quadro__Direita">
+                <textarea class="output" placeholder="O texto sairá aqui." id="output-text" readonly></textarea>
+                <button id="copy" onclick="copyText()">Copiar</button>
+                <button id="transfer" onclick="transferText()">Transferir texto</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+
+        <p> Desenvolvido por Olivaldo Moreira</p>
+
+    </footer> 
+
+    <script src="interacao.js"></script>
+</body>
+</html>
